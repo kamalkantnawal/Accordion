@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import AccordianItems from "./AccordianItems";
+import AccordionItems from "./AccordionItems";
 import { data } from "./data";
 import { AccordianDiv } from "./Styled";
-const Accordian = () => {
+const Accordion = () => {
   const [mutiselection, setMultiSelection] = useState(false);
   const [selectedId, setSelectedId] = useState(null);
 
@@ -29,7 +29,7 @@ const Accordian = () => {
         <div className="accordian-items">
           {data.map((item) => {
             return (
-              <AccordianItems
+              <AccordionItems
                 getSelectedId={getSelectedId}
                 show={selectedId === item?.id ? true : false}
                 data={item}
@@ -43,4 +43,4 @@ const Accordian = () => {
   );
 };
 
-export default Accordian;
+export default Accordion;

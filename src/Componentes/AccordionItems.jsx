@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaPlus } from "react-icons/fa6";
 
-const AccordianItems = ({ data, show, getSelectedId, mutiselection }) => {
+const AccordionItems = ({ data, show, getSelectedId, mutiselection }) => {
   const [showMulti, setShowMulti] = useState(false);
   const handleMultiClicked = () => {
     setShowMulti(!showMulti);
@@ -29,4 +29,4 @@ const AccordianItems = ({ data, show, getSelectedId, mutiselection }) => {
   );
 };
 
-export default AccordianItems;
+export default AccordionItems;
